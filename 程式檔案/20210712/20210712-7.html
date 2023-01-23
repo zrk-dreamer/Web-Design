@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>背景色</title>
+    <meta charset="utf-8">
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            background-color: orange;
+            position: relative;
+            -webkit-animation-duration: 3s;
+            -webkit-animation-name: colorPosition;
+            -webkit-animation-iteration-count: 4;
+            -webkit-animation-direction: alternate-reverse;
+        }
+
+        @-webkit-keyframes colorPosition {
+            0% {
+                background-color: orange;
+                left: 0px;
+                top: 0px;
+            }
+
+            33% {
+                background-color: greenyellow;
+                left: 0px;
+                top: 300px;
+            }
+
+            66% {
+                background-color: pink;
+                left: 300px;
+                top: 0px;
+            }
+
+            100% {
+                background-color: blue;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>play</div>
+</body>
+
+</html>

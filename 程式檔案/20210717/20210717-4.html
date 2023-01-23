@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>圖片的翻面</title>
+    <meta charset="utf-8">
+    <style>
+        .container {
+            cursor: pointer;
+            height: 150px;
+            position: relative;
+            width: 150px;
+        }
+
+        .card {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: all 1s ease-in-out;
+        }
+
+        .card:hover {
+            -webkit-transform: rotateY(180deg);
+        }
+        .card .front {
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+            backface-visibility: hidden;
+            position: absolute;
+            overflow: hidden;
+        }
+        .card .back {
+            background: lemonchiffon;
+            opacity: 0.5;
+            color: red;
+            line-height: 150px;
+            text-align: center;
+            -webkit-transform: rotateY(180deg);
+        }
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <p>滑進圖片看看</p>
+    <div class="container">
+        <div class="card">    
+            <div class="front">
+                <img src="/image/甜點.jpg" alt="desert">
+            </div>
+            <div class="back">yummy</div>
+        </div>
+    </div>
+</body>
+</html>

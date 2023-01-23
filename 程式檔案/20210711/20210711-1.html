@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TRANSFORM-3D</title>
+    <meta charset="utf-8">
+    <style>
+        section {
+            margin: 10px;
+            border: 3px solid black;
+            display: inline-block;
+        }
+
+        div {
+            transition: all 10s ease-in;
+            background-color: lightcyan;
+            width: 200px;
+            height: 200px;
+        }
+
+        div:hover {
+            background-color: greenyellow;
+            -webkit-transform: translate3d(3000px, 6000px, 2000px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>move your mouse into below encircled area</h1>
+    <section>
+        <div>translate3d</div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu with Left Image in Table</title>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <style>
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            #t1 {
+                text-align: center;
+                background-color: blanchedalmond;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="t1">超好吃餐廳</h1>
+        <table >
+            <tbody>
+                <tr>
+                    <td id="t2"><b><h4>圖片</h4></b></td>
+                    <td><img src="https://creator-taiwan.com/wp-content/uploads/2020/05/%E7%BE%A9%E5%BC%8F%E9%A4%90%E9%BB%9E%E5%8F%8A%E7%BE%8E%E5%91%B3%E8%8C%B6%E9%BB%9E.jpg" alt="Italian cuisine" /></td>
+                    <td><img src="https://th.bing.com/th/id/OIP.JOt4MerQfMZsC6aVWk0nLwHaJQ?pid=ImgDet&rs=1" alt="drinks" /></td>
+                    <td><img src="https://images.liebenswert-magazin.de/spekulatius-dessert-rezepte,id=f7db4792,b=liebenswert,w=1600,rm=sk.jpeg" alt="dessert" /></td>
+                </tr>
+                <tr>
+                    <td id="t3"><b><h4>菜單</h4></b></td>
+                    <td>
+                        <fieldset>
+                            <legend>主菜:</legend>
+                            <input type="checkbox" name="main meal">義大利麵 $330<br>
+                            <input type="checkbox" name="main meal">千層麵 $320<br>
+                            <input type="checkbox" name="main meal">義式燉飯* $330
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <legend>附餐:</legend>
+                            <input type="checkbox" name="side meal">焦糖瑪奇朵 $90<br>
+                            <input type="checkbox" name="side meal">卡布奇諾 $85<br>
+                            <input type="checkbox" name="side meal">馥列白 $95*
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <legend>點心:</legend>
+                            <input type="checkbox" name="dessert">花之譚 $150<br>
+                            <input type="checkbox" name="dessert">仲夏夜* $180<br>
+                            <input type="checkbox" name="dessert">鑽石星 $180
+                        </fieldset>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    <h2>*:老闆大推!!!!</h2>
+    </body>
+</html>

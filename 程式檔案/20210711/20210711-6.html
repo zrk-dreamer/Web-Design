@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TRANSLATEZ</title>
+    <meta charset="utf-8">
+    <style>
+        section {
+            margin: 10px;
+            border: 3px solid black;
+            -webkit-perspective: 201px;
+            display: inline-block;
+        }
+
+        div {
+            transition: all 1s ease-in;
+            background-color: lightcyan;
+            width: 200px;
+            height: 200px;
+        }
+
+        #G:hover {
+            background-color: greenyellow;
+            -webkit-transform: rotateX(180deg);
+        }
+
+        #O:hover {
+            background-color: orange;
+            -webkit-transform: rotateY(-90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Play!</h1>
+    <section>
+        <div id="G">X</div>
+    </section>
+    <section>
+        <div id="O">Y</div>
+    </section>
+</body>
+
+</html>

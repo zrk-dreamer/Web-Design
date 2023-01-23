@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>animation-border</title>
+    <meta charset="utf-8">
+    <style>
+        div {
+            width: 180px;
+            height: 180px;
+            border: 1px dashed black;
+            -webkit-animation-name: borderAni;
+            -webkit-animation-delay: 1s;
+            -webkit-animation-duration: 4s;
+            -webkit-animation-iteration-count:infinite;
+        }
+
+        @-webkit-keyframes borderAni {
+            0% {
+                border: 1px dashed black;
+            }
+
+            25% {
+                border: 10px solid orange;
+            }
+
+            50% {
+                border: 20px dashed blue;
+            }
+
+            75% {
+                border: 10px solid yellow
+            }
+
+            100% {
+                border: 1px dashed black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

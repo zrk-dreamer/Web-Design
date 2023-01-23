@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div id='demo'></div>
+
+    <script>
+        var heads = ["SerialNo", "Sno", "Name", "Sex", "Score"];
+        var studs = [
+            ["S001", "kech", "M", "80"],
+            ["S002", "Mary", "F", "90"],
+            ["S003", "John", "M", "88"],
+            ["S004", "Tom", "M", "77"],
+            ["S005", "Joy", "F", "50"]
+        ];
+
+        var outStr = "";
+        outStr += "<table id='myTable'>";
+        outStr += "<thead>";
+        outStr += "<tr>";
+        for (var i=0; i<heads.length; i++){
+            outStr += "<th>" + heads[i] + "</th>";
+        }
+        outStr += "</tr>";
+        outStr += "</thead>";
+
+        outStr += "<tbody>";
+
+        for (var i=0; i<studs.length; i++){
+            outStr += "<tr>";
+            outStr += "<td>" + (i+1) + "</td>";
+            for (var j=0; j<studs[i].length; j++){
+                outStr += "<td>" + studs[i][j] + "</td>";
+            }
+            outStr += "</tr>";
+        }
+        outStr += "</tbody>";
+        outStr += "</table>";
+
+        document.getElementById("demo").innerHTML = outStr;
+
+        document.getElementById("myTable").className = "table table-striped";
+    </script>
+    
+</body>
+</html>

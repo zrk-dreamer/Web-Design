@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TRANSFORM-3D</title>
+    <meta charset="utf-8">
+    <style>
+        section {
+            margin: 30px;
+            border: 3px solid black;
+            display: inline-table;
+            -webkit-perspective: 300px;
+            perspective: 300px;
+        }
+
+        div {
+            transition: all 1s ease-in;
+            margin: 10px;
+            display: inline-table;
+            background-color: lightcyan;
+            width: 100px;
+            height: 100px;
+        }
+
+        .green:hover div {
+            background-color: greenyellow;
+            -webkit-transform: rotateX(4500000000deg);
+            transform: rotateX(45000000deg);
+        }
+
+        .orange:hover div {
+            background-color: orange;
+            -webkit-transform: rotateY(45deg);
+            transform: rotateY(45deg);
+        }
+
+        .yellow:hover div {
+            background-color: yellow;
+            -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>請將滑鼠移入下列任一區域</h1>
+    <section class="green">
+        <div>沿著X軸旋轉</div>
+        <div>沿著X軸旋轉</div>
+        <div>沿著X軸旋轉</div><br>
+        <div>沿著X軸旋轉</div>
+        <div>沿著X軸旋轉</div>
+        <div>沿著X軸旋轉</div><br>
+        <div>沿著X軸旋轉</div>
+        <div>沿著X軸旋轉</div>
+        <div>沿著X軸旋轉</div>
+    </section>
+    <section class="orange">
+        <div>沿著Y軸旋轉</div>
+        <div>沿著Y軸旋轉</div>
+        <div>沿著Y軸旋轉</div><br>
+        <div>沿著Y軸旋轉</div>
+        <div>沿著Y軸旋轉</div>
+        <div>沿著Y軸旋轉</div><br>
+        <div>沿著Y軸旋轉</div>
+        <div>沿著Y軸旋轉</div>
+        <div>沿著Y軸旋轉</div>
+    </section>
+    <section class="yellow">
+        <div>沿著Z軸旋轉</div>
+        <div>沿著Z軸旋轉</div>
+        <div>沿著Z軸旋轉</div><br>
+        <div>沿著Z軸旋轉</div>
+        <div>沿著Z軸旋轉</div>
+        <div>沿著Z軸旋轉</div><br>
+        <div>沿著Z軸旋轉</div>
+        <div>沿著Z軸旋轉</div>
+        <div>沿著Z軸旋轉</div>
+    </section>
+</body>
+
+</html>

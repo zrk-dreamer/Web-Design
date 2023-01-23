@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>excercise</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>基本資料</legend>
+                姓名: <input type="text" placeholder="請輸入姓名"><br/>
+                密碼: <input type="password" placeholder="請輸入密碼"><br/>
+                生日: <input  type="date"><br/>
+                性別: <input type="radio" name="gender">男
+                <input type="radio" name="gender">女
+            </fieldset>
+            <fieldset>
+                <legend>額外資訊</legend>
+                興趣: <input type="checkbox" name="int">運動
+                <input type="checkbox" name="int">旅遊
+                <input type="checkbox" name="int">音樂
+                <input type="checkbox" name="int">閱讀<br/>
+                喜愛顏色: <input type="color"><br>
+                學歷: <select>
+                    <option value="graduaateSchool">研究所</option>
+                    <option value="university">大專院校</option>
+                    <option value="seniorHigh">高中職</option>
+                    <option value="juniorHigh">國中</option>
+                    <option value="others">其他</option>
+                </select><br>
+                年齡: <input type="number" name="age" min="0" max="120"><br>
+                簡歷: <textarea placeholder="請輸入電子郵件"></textarea>
+            </fieldset>
+            <button type="button">填寫完成</button>
+        </form>
+    </body>
+</html>

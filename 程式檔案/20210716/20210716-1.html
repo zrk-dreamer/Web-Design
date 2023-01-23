@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>啟動與暫停動畫</title>
+        <meta charset="utf-8">
+        <style>
+            div{
+                width: 150px;
+                height: 150px;
+                background-color: orange;
+                position: relative;
+                -webkit-animation: myAni 3s infinite;
+                -webkit-animation-direction: alternate;
+            }
+            @-webkit-keyframes myAni {
+                from {left: 0px;}
+                to {left: 600px;}
+            }
+        </style>
+    </head>
+    <body>
+        <div id="demoDiv">linear</div>
+        <button onclick="toRun()">執行</button>
+        <button onclick="toPause()">暫停</button>
+        <script>
+            function toRun() {
+                document.getElementById("demoDiv").style.WebkitAnimationPlays="running";
+                document.getElementById("demoDiv").style.animationPlayState="running";
+            }
+            function toPause() {
+                document.getElementById("demoDiv").style.WebkitAnimationPlayState="paused";
+            }
+        </script>
+    </body>
+</html>

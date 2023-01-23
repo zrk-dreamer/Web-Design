@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>縮放的邊框</title>
+    <meta charset="utf-8">
+    <style>
+        img {
+            border: 3px double gold;
+            -webkit-animation: mymove 5s infinite;
+        }
+
+        @-webkit-keyframes mymove {
+            50% {
+                border-width: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="/image/sunset.jpg" alt="sunset">
+</body>
+</html>

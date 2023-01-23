@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BORDER</title>
+        <meta charset="utf-8">
+        <style>
+            #myDiv {
+                border: 11px solid transparent;
+                width: 300px;
+                padding: 20px;
+                -webkit-border-image: url(/image/icon.png) 30 round;
+            }
+        </style>
+        <script>
+            function myFunction() {
+                document.getElementById("myDiv").style.WebkitBorderImage="url(/image/small_icon.png) 22 round"
+            }
+        </script>
+    </head>
+    <body>
+        <div id="myDiv">The goal of this research is to implement a new name card 
+            system called "portable name card typesetting system
+        </div>
+        <button onclick="myFunction()">換邊框圖片樣式</button>
+    </body>
+</html>

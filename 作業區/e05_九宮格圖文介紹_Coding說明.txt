@@ -1,0 +1,12 @@
+《e05_九宮格圖文介紹_Coding說明》
+- 圖片及文字內容自訂
+- 建議利用表格（table） 去放置圖文介紹
+- 將 table 設計成一個有 3*3 格子的表格
+- 若是為了讓 table 在網頁中放置在中間，建議用 div 去包著 table
+— div 可以設 width 的值為 100%，且文字對齊（text-align）為置中
+- table 的寬度則可以設定小於 100%（例如，75%）
+- 要讓 table 能夠有置中效果，必須設定它的 display 值為 inline-block
+- 表格的格子（td）可以設定它的高度（height）和文字對齊（text-align）
+- 圖片（img）必須設定它的寬度（width）和高度（height）
+- 圖片（img）也必須設定它的 display 屬性值，才可能與文字內容並排
+- 左右的圖片，要讓它們靠左及靠右放置，可以設定它的 float 屬性值

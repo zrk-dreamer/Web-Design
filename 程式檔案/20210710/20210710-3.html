@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TRANSITION</title>
+    <meta charset="utf-8">
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            top: 100px;
+            left: 100px;
+            background-color: violet;
+            -webkit-transition: width 1s, height 1s, background 1s, top 1s, left 1s;
+            -webkit-transition-delay: 1s;
+        }
+
+        div:hover {
+            width: 300px;
+            height: 400px;
+            background: yellow;
+            top: 300px;
+            left: 200px;
+        }
+
+        #div1 {
+            -webkit-transition-timing-function: linear;
+        }
+
+        #div2 {
+            -webkit-transition-timing-function: ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            move the mouse to the area.
+        </div>
+        <div id="div1">linear</div>
+        <div id="div2">ease-out</div>
+    </div>
+</body>
+
+</html>

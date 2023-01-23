@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>animaton</title>
+    <meta charset="utf-8">
+    <style>
+        div {
+            width: 100[x];
+            height: 50px;
+            background-color:seashell;
+            font-weight: bold;
+            display: inline-table;
+            position: relative;
+            -webkit-animation: myAni 4s infinite;
+            -webkit-animation-direction: alternate;
+        }
+
+        #div1 {
+            -webkit-animation-timing-function: linear;
+        }
+
+        #div2 {
+            -webkit-animation-timing-function: ease;
+        }
+
+        #div3 {
+            -webkit-animation-timing-function: ease-in;
+        }
+
+        #div4 {
+            -webkit-animation-timing-function: ease-out;
+        }
+
+        #div5 {
+            -webkit-animation-timing-function: ease-in-out;
+        }
+
+        @-webkit-keyframes myAni {
+            from {
+                top: 0px;
+            }
+
+            to {
+                top: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">linear</div>
+    <div id="div2">ease</div>
+    <div id="div3">ease-in</div>
+    <div id="div4">ease-out</div>
+    <div id="div5">ease-in-out</div>
+</body>
+
+</html>

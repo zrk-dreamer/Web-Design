@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Border</title>
+    <meta charset="utf-8">
+    <style>
+        #myDiv {
+            border: transparent solid 11px;
+            width: 300px;
+            padding: 20px;
+            -webkit-border-image: url(/image/small\ icon.png) 24 round;
+        }
+    </style>
+    <script>
+        function myFunction() {
+        document.getElementById("myDiv").style.WebkitBorderImage= "url(/image/icon.png) 24 stretch"; 
+        }
+    </script>
+</head>
+
+<body>
+    <div id="myDiv">
+        The goal of this research is to implement a new name card
+        system called "portable name card typesetting system“ (PNCTS)
+    </div>
+    <button onclick="myFunction()">換邊框圖片樣式</button>
+</body>
+
+</html>

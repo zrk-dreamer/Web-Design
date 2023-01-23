@@ -1,0 +1,8 @@
+《e01_交錯行的表格_Coding說明》
+
+— 表格標題（caption）必須設定 caption-side 的值，讓它出現在表格下方
+- 表格（table）的邊框線條要設定 border-collapse 的值，讓它線條合併
+- 每一個格子（th, td）只能有「下方」的邊框線條。利用設定 border-bottom 的值
+- 每一個格子（th, td）去設定內邊距（padding）的值，讓文字和邊框間有空隙
+- 奇數 or 偶數列，利用設定不同的 class，去定義不同的背景色（background-color）。
+- 表格的表頭列（thead）有自己的背景色（background-color）

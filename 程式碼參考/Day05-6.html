@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meal</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id='demo'></div>
+
+    <script>
+        var foods = ['雞腿飯', '排骨飯', '牛肉飯', '魚排飯'];
+        var price = [70, 60, 90, 80];
+
+        var outStr = "";
+        outStr += "<fieldset style='width:10%'>";
+        outStr += "<legend>主菜</legend>";
+
+        for (var i=0; i<foods.length; i++){
+            outStr += "<input type='checkbox' name='meal' value=" + price[i] +">";
+            outStr += foods[i] + "<br>";
+        }
+
+        outStr += "</fieldset>";
+
+        document.getElementById("demo").innerHTML = outStr;
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>horizontal navigation</title>
+    <meta charset="utf-8">
+    <style>
+        div {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        div a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        div a:hover {
+            background-color: #f1f1f1;
+        }
+
+        li:hover div {
+            display: block;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            color: white;
+        }
+
+        li {
+            float: left;
+            padding: 14px 16px;
+            text-align: center;
+        }
+
+        li:hover {
+            background-color: #04AA6D;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>
+            News
+            <div>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+            </div>
+        </li>
+        <li>
+            Contact
+            <div class="con">
+                <a href="#">Link 5</a>
+                <a href="#">Link 6</a>
+                <a href="#">Link 7</a>
+                <a href="#">Link 8</a>
+            </div>
+        </li>
+        <li>
+            About
+            <div class="con">
+                <a href="#">Link 9</a>
+                <a href="#">Link 10</a>
+                <a href="#">Link 11</a>
+                <a href="#">Link 12</a>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

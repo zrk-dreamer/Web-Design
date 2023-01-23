@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TRANSFORM-2D</title>
+    <meta charset="utf-8">
+    <style>
+        div {
+            display: inline-table;
+            width: 150px;
+            height: 100px;
+            margin: 50px;
+            background-color: greenyellow;
+            border: 5px solid blue;
+        }
+
+        div#divOne {
+            -webkit-transform: skewX(30deg);
+        }
+
+        div#divTwo {
+            -webkit-transform: skewY(-30deg);
+        }
+
+        div#divThree {
+            -webkit-transform: skew(-30deg,-30deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div>normal</div>
+    <div id="divOne">x</div>
+    <div id="divTwo">y</div>
+    <div id="divThree">x, y</div>
+</body>
+
+</html>
